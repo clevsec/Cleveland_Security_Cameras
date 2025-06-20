@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cleveland Security Cameras provides expert security camera installation, surveillance systems, remote view technology, data cabling, Cat6 cabling, internet setup, and computer networks in Cleveland, OH. Serving a city with rising security needs, we offer 20+ years of expertise. Call 216-333-8245 for a free quote!">
+  <meta name="keywords" content="security cameras Cleveland Ohio, surveillance systems, remote view security, security camera installation, data cabling Cleveland, Cat6 cabling, internet setup, computer networks, Cleveland Security Cameras, CCTV repair">
+  <meta name="author" content="Cleveland Security Cameras LLC">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Cleveland Security Cameras | Surveillance & Data Cabling Solutions">
+  <meta property="og:description" content="Protect Cleveland, OH with top-tier security cameras, surveillance, remote view, data cabling, Cat6 cabling, internet setup, and computer networks. 20+ years of expertise. Call 216-333-8245!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clevelandsecuritycameras.com">
+  <meta property="og:image" content="https://clevelandsecuritycameras.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cleveland Security Cameras | Expert Surveillance & Cabling">
+  <meta name="twitter:description" content="Secure Cleveland, OH with advanced security cameras, surveillance, remote view, data cabling, and Cat6 solutions. Contact us at 216-333-8245 for a free quote!">
+  <title>Cleveland Security Cameras | Expert Surveillance & Cabling in Cleveland, OH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* NVR Background */
+    .nvr-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #0a2d4f, #1e4a7a);
+      opacity: 0.08;
+      z-index: -1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 3px;
+      animation: nvrPulse 12s infinite ease-in-out;
+    }
+
+    .nvr-background::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 12px,
+        transparent 12px,
+        transparent 24px
+      );
+    }
+
+    @keyframes nvrPulse {
+      0%, 100% { opacity: 0.08; }
+      50% { opacity: 0.12; }
+    }
+
+    .security-header {
+      background: linear-gradient(90deg, #0a2d4f, #1e4a7a);
+      color: #ffffff;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .phone-number a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+    .phone-number a:hover {
+      color: #4a90e2;
+    }
+
+    .contact-link, .quote-button {
+      background-color: transparent;
+      color: #ffffff;
+      border: 2px solid #4a90e2;
+      padding: 12px 24px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-left: 10px;
+    }
+
+    .contact-link:hover, .quote-button:hover {
+      background-color: #4a90e2;
+      transform: translateY(-2px);
+    }
+
+    .security-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .security-form {
+      background-color: #f8fafc;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      margin: 0 auto 50px;
+      animation: slideIn 0.9s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .security-form h2 {
+      font-size: 28px;
+      color: #0a2d4f;
+      margin-bottom: 25px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      color: #2d2d2d;
+      margin-bottom: 10px;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #d9e1e8;
+      border-radius: 6px;
+      background-color: #ffffff;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: #0a2d4f;
+      box-shadow: 0 0 0 3px rgba(10, 45, 79, 0.15);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .cta-button {
+      background-color: #4a90e2;
+      color: #ffffff;
+      padding: 16px 32px;
+      font-size: 17px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 350px;
+      display: block;
+      margin: 20px auto;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #2a70c2;
+      transform: translateY(-3px);
+    }
+
+    .content-section h1 {
+      font-size: 38px;
+      color: #0a2d4f;
+      margin-bottom: 25px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    .highlight {
+      color: #4a90e2;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+    }
+
+    .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #4a90e2;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .highlight:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .intro-text, .cta-text, .section-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #2d2d2d;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .service-item {
+      background-color: #f8fafc;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-item h3 {
+      font-size: 22px;
+      color: #0a2d4f;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      background-color: #0a2d4f;
+      color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact-info a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .security-container {
+        padding: 0 15px;
+      }
+
+      .content-section h1 {
+        font-size: 30px;
+      }
+
+      .intro-text, .cta-text, .section-text {
+        font-size: 16px;
+      }
+
+      .security-header {
+        padding: 12px 15px;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .security-form {
+        padding: 20px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nvr-background"></div>
+  <header class="security-header">
+    <div class="header-content">
+      <span class="phone-number">Call Us: <a href="tel:2163338245">216-333-8245</a></span>
+      <div>
+        <a href="https://clevelandsecuritycameras.com" target="_blank" class="contact-link">Contact Us</a>
+        <a href="#quote-form" class="quote-button">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+  <div class="security-container">
+    <form action="https://formspree.io/f/mnnvvnnb" method="POST" class="security-form" id="quote-form">
+      <h2>Request a Free Security Consultation</h2>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="message">Your Security Needs</label>
+        <textarea id="message" name="message" placeholder="Tell us about your surveillance or cabling needs" rows="5" required aria-required="true"></textarea>
+      </div>
+      <button type="submit" class="cta-button">Submit Quote Request</button>
+    </form>
+    <div class="content-section">
+      <h1>Premier <span class="highlight">Security Cameras</span> & <span class="highlight">Surveillance</span> Solutions in Cleveland, OH</h1>
+      <p class="intro-text">Cleveland Security Cameras is your trusted partner for advanced <strong class="highlight">security cameras</strong>, <strong class="highlight">surveillance</strong> systems, and <strong class="highlight">remote view</strong> technology in Cleveland, Ohio. With over <strong>20 years of expertise</strong>, we specialize in professional <strong class="highlight">security camera installation</strong>, <strong class="highlight">data cabling</strong>, <strong class="highlight">Cat6 cabling</strong>, <strong class="highlight">internet setup</strong>, and <strong class="highlight">computer networks</strong> for homes, businesses, and municipal projects. Our mission is to enhance safety in a city facing evolving security challenges.</p>
+
+      <h2>Cleveland: A City with Growing Security Needs</h2>
+      <p class="section-text">Cleveland, Ohio, with a population of approximately 370,000 in 2025, is a vibrant city known for its cultural landmarks like the Rock and Roll Hall of Fame and thriving neighborhoods. However, recent reports indicate that crime rates remain a concern, with a 13% drop in crime last summer compared to 2023, yet incidents like a shooting at Lee Harvard Plaza highlight the need for robust <strong class="highlight">surveillance</strong> systems. Cleveland’s police have embraced <strong class="highlight">security cameras</strong> as “asset multipliers,” helping pinpoint crimes in real-time, as seen in a recent case where a camera recorded a crime hours after installation. With cyber threats also rising—global cyberattacks increased 47% in Q1 2025—businesses and residents need reliable <strong class="highlight">security cameras</strong> and <strong class="highlight">computer networks</strong> to stay protected.</p>[](https://www.news5cleveland.com/news/local-news/new-surveillance-video-shows-sheer-panic-when-gunshots-go-off-hitting-7-at-cleveland-shopping-center)[](https://techrepublic.com/article/news-cyber-attacks-check-point)[](https://axios.com/local/cleveland/2025/05/22/summer-safety-plan-2025-mayor-bibb)
+
+      <h2>Why Cleveland Needs Our <span class="highlight">Surveillance</span> Solutions</h2>
+      <p class="section-text">Cleveland’s diverse communities, from Downtown to Ohio City, face unique security challenges. The city’s critical infrastructure, including schools, hospitals, and businesses, is at risk from physical crimes and cyberattacks, with ransomware complaints up 9% in 2024. Our <strong class="highlight">security cameras</strong> offer <strong class="highlight">remote view</strong> capabilities, allowing you to monitor your property from anywhere. Our <strong class="highlight">data cabling</strong> and <strong class="highlight">Cat6 cabling</strong> services ensure fast, secure <strong class="highlight">internet setup</strong> and <strong class="highlight">computer networks</strong>, critical for businesses facing cyber threats like those reported in Cleveland’s recent ransomware attacks.</p>[](https://reuters.com/world/us/complaints-about-ransomware-attacks-us-infrastructure-rise-9-fbi-says-2025-04-23)[](https://clevescene.com/news/ohio-lawmakers-want-local-governments-to-create-cybersecurity-plans-46762559)
+
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3><span class="highlight">Security Camera Installation</span></h3>
+          <p>Professional installation of high-definition <strong class="highlight">security cameras</strong> for homes, businesses, and municipal projects, ensuring optimal coverage and <strong class="highlight">remote view</strong> access.</p>
+        </div>
+        <div class="service-item">
+          <h3><span class="highlight">Surveillance</span> Systems</h3>
+          <p>Advanced <strong class="highlight">surveillance</strong> solutions with real-time monitoring and cloud storage, tailored to Cleveland’s security needs.</p>
+        </div>
+        <div class="service-item">
+          <h3><span class="highlight">Data Cabling</span> & <span class="highlight">Cat6 Cabling</span></h3>
+          <p>Expert <strong class="highlight">data cabling</strong> and <strong class="highlight">Cat6 cabling</strong> for reliable, high-speed networks, supporting your <strong class="highlight">internet setup</strong>.</p>
+        </div>
+        <div class="service-item">
+          <h3><span class="highlight">Computer Networks</span> & <span class="highlight">Internet Setup</span></h3>
+          <p>Secure <strong class="highlight">computer networks</strong> and <strong class="highlight">internet setup</strong> to protect against cyber threats and ensure seamless connectivity.</p>
+        </div>
+        <div class="service-item">
+          <h3>CCTV Repair & Maintenance</h3>
+          <p>Fast, reliable repairs for existing <strong class="highlight">security cameras</strong> and <strong class="highlight">surveillance</strong> systems, keeping your setup operational.</p>
+        </div>
+      </div>
+
+      <h2>Why Choose Cleveland Security Cameras?</h2>
+      <p class="section-text">With over 20 years of experience, Cleveland Security Cameras is a trusted name in Cleveland, OH. Our Google My Business profile showcases our 5-star reviews and commitment to quality. We use NDAA-approved hardware for durability and compliance, serving clients from small homes to large institutions. Our team, led by Ashraf, System Designer, ensures every project—from <strong class="highlight">security camera installation</strong> to <strong class="highlight">Cat6 cabling</strong>—meets your needs. Check our <a href="https://www.google.com/maps/place/Cleveland+Security+Cameras" target="_blank">Google My Business</a> for testimonials and details.</p>
+
+      <p class="cta-text">Ready to secure your property? Call us at <a href="tel:2163338245">216-333-8245</a> or use the form above for a free consultation on our <strong class="highlight">surveillance</strong>, <strong class="highlight">security cameras</strong>, and <strong class="highlight">data cabling</strong> services.</p>
+      <a href="#quote-form" class="quote-button">Get Started Now</a>
+
+      <div class="contact-info">
+        <h2>Contact Cleveland Security Cameras</h2>
+        <p>Phone: <a href="tel:2163338245">216-333-8245</a><br>
+        Email: <a href="mailto:contact@clevelandsecuritycameras.com">contact@clevelandsecuritycameras.com</a><br>
+        Website: <a href="https://clevelandsecuritycameras.com" target="_blank">clevelandsecuritycameras.com</a><br>
+        Follow us on <a href="https://www.google.com/maps/place/Cleveland+Security+Cameras" target="_blank">Google My Business</a> for updates and reviews!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
